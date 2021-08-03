@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #1c2510;
+}
+
+.bg-text {
+    position: absolute;
+    background-color: #bc6c25;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    color: #fefae0;
+}
+
+.text {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 24px;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.bg-text-pulse {
+    position: absolute;
+    background-color: #81420a;
+    border-radius: 100%;
+    animation: 4s pulse infinite linear;
+}
+
+@keyframes pulse {
+    0% {
+        width: 150px;
+        height: 150px;
+        opacity: 1;
+    }
+
+    25% {
+        width: 270px;
+        height: 270px;
+        opacity: 0;
+    }
+
+    50% {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+    }
+
+    75% {
+        width: 150px;
+        height: 150px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 220px;
+        height: 220px;
+        opacity: 0;
+    }
+}

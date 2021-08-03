@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Font Roboto Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <form method="post">
+        <div class="content">
+            <button id="on" class="btn" name="1ON">on</button>
+            <span id="turnBtn" class="turn-btn"></span>
+            <button id="off" class="btn" name="1OFF">off</button>
+        </div>
+    </form>
+
+    <script>
+        const btnOn = document.getElementById("on");
+        const turnBtnIcon = document.getElementById("turnBtn");
+        const btnOff = document.getElementById("off");
+
+        on.addEventListener("click", function (e) {
+            e.preventDefault();
+            turnBtnIcon.style.transform = "rotate(-270deg)";
+        });
+
+        off.addEventListener("click", function (e) {
+            e.preventDefault();
+            turnBtnIcon.style.transform = "rotate(-90deg)";
+        });
+    </script>
+</body>
+
+</html>

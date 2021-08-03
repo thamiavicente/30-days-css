@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #632B1F;
+}
+
+.btn {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    background-color: transparent;
+    border: 4px #E36346 solid;
+    padding: 16px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    color: #fab9aa;
+}
+
+.btn::before, .btn::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: #632B1F;
+    transform: skewX(50deg);
+    transition: .5s linear;
+}
+
+.btn::before {
+    top: -4px;
+    left: 8.5%;
+}
+
+.btn::after {
+    bottom: -4px;
+    right: 8.5%;
+}
+
+.btn:hover::before {
+    left: 88%;
+    transform: skewX(-50deg);
+}
+
+.btn:hover::after {
+    right: 88%;
+    transform: skewX(-50deg);
+}
+
+.btn:active {
+    background-color: #fab9aa;
+    color: #E36346;
+}

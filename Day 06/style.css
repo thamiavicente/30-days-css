@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #1d1006;
+}
+
+.fa-play-circle {
+    font-size: 26px;
+    margin-bottom: 0px;
+    color: #fcbfa0;
+    text-shadow: 0 0 20px #ee5204;
+}
+
+.list-text {
+    list-style: none;
+    display: flex;
+}
+
+.list-text li {
+    font-size: 84px;
+    letter-spacing: 20px;
+    color: #563f2e;
+    animation: neon 1.5s ease-out infinite;
+    font-family: 'Staatliches', cursive;
+}
+
+@keyframes neon {
+    0% {
+        color: #563f2e;
+        text-shadow: 0 0 0;
+    }
+
+    90% {
+        color: #563f2e;
+        text-shadow: 0 0 0;
+    }
+
+    100% {
+        color: #fcbfa0;
+        text-shadow: 0 0 20px #ee5204;
+    }   
+}
+
+.list-text li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.list-text li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.list-text li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.list-text li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.list-text li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.list-text li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.list-text li:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.list-text li:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.list-text li:nth-child(11) {
+    animation-delay: 0.9s;
+}
+
+.list-text li:nth-child(12) {
+    animation-delay: 1s;
+}

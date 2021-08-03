@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e3452;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border-top: 12px solid #1e6091;
+    border-bottom: 12px solid #1e6091;
+    border-right: 12px solid #1e6091;
+    border-left: 12px solid #52b69a;
+    animation: animate 1.3s linear infinite;
+}
+
+.text {
+    color: #52b69a;
+    font-family: 'Roboto', sans-serif;
+    line-height: 300px;
+    font-size: 40px;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}

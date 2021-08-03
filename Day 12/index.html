@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Hover button</title>
+</head>
+<body>
+    <button id="btn" class="btn">Hover your mouse here!</button>
+
+    <script>
+        const btn = document.getElementById('btn');
+        
+        btn.addEventListener("mouseover", function (e) {
+            btn.innerHTML = 'Thank you! &#128077;';
+        });
+
+        btn.addEventListener("mouseout", function (e) {
+            btn.innerHTML = 'Hover your mouse here!';
+        });
+    </script>
+</body>
+</html>
