@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.button {
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+	font-size: 40px;
+	border: 4px solid white;
+	padding: 30px 40px;
+	position: relative;
+	overflow: hidden;
+    background-color: transparent;
+}
+
+.button:before {
+	content: 'Te amo';
+	color: rgb(0, 90, 0);
+	background-color: #c1f1c8f6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateY(-100%);
+	transition:all .5s;
+}
+
+.button:hover:before {
+transform: translateY(0px);
+}
