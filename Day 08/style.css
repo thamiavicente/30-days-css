@@ -75,10 +75,10 @@ body {
 .my-love {
     position: absolute;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Raleway', sans-serif;
     color: #550012;
-    top: 42%;
+    top: 39%;
     animation: beat-love 3s ease-in infinite;
 }
 

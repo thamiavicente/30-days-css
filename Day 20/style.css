@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600;300&display=swap');
+
+:root {
+    --red: #f94144;
+    --blue: #4895ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2a9d8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.chart-container {
+    box-shadow: 14px 14px 20px 0px rgb(38, 70, 83, 0.5);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.chart-header {
+    background-color: #e9c46a;
+    color: #fff;
+    padding: 14px 20px;
+    min-width: 360px;
+}
+
+.chart-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.chart-box:first-child {
+    margin-bottom: 2px;
+}
+
+.chart-title, .chart-total {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.chart-title {
+    font-size: 20px;
+}
+
+.chart-total {
+    font-size: 16px;
+}
+
+.chart-text {
+    font-size: 14px;
+}
+
+.chart-content {
+    padding: 0 12px;
+    background-color: #fffffc;
+    color: #6c757d;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.chart-legend-color {
+    width: 14px;
+    height: 4px;
+    border-radius: 8px;
+    margin: 0 6px;
+}
+
+.chart-legend-color:nth-child(1) {
+    background-color: var(--red);
+}
+
+.chart-legend-color:nth-child(3) {
+    background-color: var(--blue);
+}
+
+.chart-legend-text {
+    font-size: 12px;
+}
+
+.chart-legend-text:nth-child(2) {
+    margin-right: 30px;
+}
+
+.chart-lines-data {
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6px;
+    height: 50px;
+    position: relative;
+}
+
+.chart-lines-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    top: var(--dot-top);
+    position: relative;
+}
+
+.chart-lines-dot.red {
+    background-color: var(--red);
+}
+
+.chart-lines-dot.blue {
+    background-color: var(--blue);
+}
+
+.chart-lines-line {
+    position: absolute;
+    stroke-width: 2px;
+    fill: transparent;
+    top: 0;
+    min-width: 320px;
+    width: 100%;
+}
+
+.chart-lines-line.red {
+    stroke: var(--red);
+}
+
+.chart-lines-line.blue {
+    stroke: var(--blue);
+}
+
+.chart-tooltip {
+    position: absolute;
+    font-size: 10px;
+    color: #fff;
+    padding: 6px;
+    bottom: 8px;
+    left: -9px;
+    border-radius: 4px;
+    opacity: 0;
+}
+
+.chart-tooltip.red {
+    background-color: var(--red);
+}
+
+.chart-tooltip.blue {
+    background-color: var(--blue);
+}
+
+.chart-tooltip:hover {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        bottom: 14px;
+    }
+}
+
+.chart-tooltip:before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+.chart-tooltip.red:before {
+    border-top: 6px solid var(--red);
+}
+
+.chart-tooltip.blue:before {
+    border-top: 6px solid var(--blue);
+}
+
+.chart-footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.chart-date-days {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-day {
+    font-size: 10px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(180deg, #000, #0d1b2a);
+    display: flex;
+    overflow: hidden;
+}
+
+.particle {
+    position: relative;
+    width: 750px;
+    height: 750px;
+}
+
+.particle:nth-child(odd) {
+    top: calc(100px * var(--d));
+    tranform: translate ((calc(20px * var(--d))), (calc(80px * var(--d))));
+    margin-left: (calc(200px * var(--d)));
+    animation: 6s colorful alternate-reverse ease infinite;
+}
+
+.particle:nth-child(even) {
+    top: calc(200px * var(--d));
+    tranform: translate ((calc(-40px * var(--d))), (calc(-90px * var(--d))));
+    margin-left: (calc(60px * var(--d)));
+    animation: 6s colorful alternate ease infinite;
+}
+
+.particle span {
+    position: absolute;
+}
+
+.particle span:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    top: calc(200px * var(--p));
+    left: calc(200px * var(--p));
+}
+
+.particle span:nth-child(4n+1){
+    animation: 20s move alternate linear infinite;
+    margin-top: 20px;
+}
+
+.particle span:nth-child(4n+1):before{
+    background-color: #ffb3c1;
+    box-shadow: 0 0 20px 4px #ff4d6d, 0 0 6px 2px #ffb3c1;
+}
+
+.particle span:nth-child(4n+2){
+    animation: 22s move alternate-reverse linear infinite;
+    margin-top: 70px;
+}
+
+.particle span:nth-child(4n+2):before{
+    background-color: #80ffdb;
+    box-shadow: 0 0 20px 4px #64dfdf, 0 0 6px 2px #80ffdb;
+}
+
+.particle span:nth-child(4n+3){
+    animation: 24s move alternate linear infinite;
+    margin-top: 400px;
+}
+
+.particle span:nth-child(4n+3):before{
+    background-color: #90e0ef;
+    box-shadow: 0 0 20px 4px #0077b6, 0 0 6px 2px #90e0ef;
+}
+
+.particle span:nth-child(4n+4){
+    animation: 26s move alternate-reverse linear infinite;
+    margin-top: 90px;
+}
+
+.particle span:nth-child(4n+4):before{
+    background-color: #e0aaff;
+    box-shadow: 0 0 20px 4px #9d4edd, 0 0 6px 2px #e0aaff;
+}
+
+@keyframes colorful {
+    from {
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

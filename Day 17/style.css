@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #001219;
+}
+
+.text-glitch {
+    color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 100px;
+    text-align: center;
+    animation: 0.75s glitch infinite;
+    text-transform: uppercase;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: -3px 2px 3px #a7c957, 3px 2px 3px #ff0054;
+    }
+
+    25% {
+
+        text-shadow: 2px 4px 2px 5px #fff;
+    }
+
+    50% {
+        text-shadow: 2px 2px 2px #a7c957, -2px 2px 2px #ff0054;
+    }
+
+    75% {
+        
+        text-shadow: 2px 4px 2px 5px #fff;
+    }
+
+    100% {
+        text-shadow: 1px 3px 3px #a7c957, -2px 1px 3px #ff0054;
+    }
+}

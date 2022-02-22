@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Chart</title>
+</head>
+<body>
+    <div class="chart">
+        <div class="chart-container">
+            <div class="chart-header">
+                <div class="chart-box">
+                    <h1 class="chart-title">Weekly Report</h1>
+                    <p class="chart-text">Revenue</p>
+                </div>
+                <div class="chart-box">
+                    <p class="chart-text">01.Feb - 07.Feb</p>
+                    <p class="chart-total">$ 3621.79</p>
+                </div>
+            </div>
+            
+            <div class="chart-content">
+                <div class="chart-body">
+                    <div class="chart-legend">
+                        <span class="chart-legend-color"></span>
+                        <p class="chart-legend-text">Views</p>
+        
+                        <span class="chart-legend-color"></span>
+                        <p class="chart-legend-text">Purchases</p>
+                    </div>
+    
+                    <div class="chart-lines">
+                        <div class="chart-lines-data">
+                            <svg class="chart-lines-line red">
+                                <polyline points="3 57,63 13,122 27,182 11,243 47,302 59,362 26"></polyline>    
+                            </svg>
+                            <div class="chart-lines-dot red" style="--dot-top:54px">
+                                <span class="chart-tooltip red">420</span>
+                            </div>
+                            <div class="chart-lines-dot red" style="--dot-top:10px">
+                                <span class="chart-tooltip red">750</span>
+                            </div>
+                            <div class="chart-lines-dot red" style="--dot-top:24px">
+                                <span class="chart-tooltip red">640</span>
+                            </div>
+                            <div class="chart-lines-dot red" style="--dot-top:8px">
+                                <span class="chart-tooltip red">780</span>
+                            </div>
+                            <div class="chart-lines-dot red" style="--dot-top:44px">
+                                <span class="chart-tooltip red">505</span>
+                            </div>
+                            <div class="chart-lines-dot red" style="--dot-top:56px">
+                                <span class="chart-tooltip red">440</span>
+                            </div>
+                            <div class="chart-lines-dot red" style="--dot-top:26px">
+                                <span class="chart-tooltip red">680</span>
+                            </div>
+                        </div>
+    
+                        <div class="chart-lines-data">
+                            <svg class="chart-lines-line blue">
+                                <polyline points="3 21,63 11,122 31,182 19,243 23,302 45,362 27"></polyline>    
+                            </svg>
+                            <div class="chart-lines-dot blue" style="--dot-top:18px">
+                                <span class="chart-tooltip blue">400</span>
+                            </div>
+                            <div class="chart-lines-dot blue" style="--dot-top:8px">
+                                <span class="chart-tooltip blue">410</span>
+                            </div>
+                            <div class="chart-lines-dot blue" style="--dot-top:28px">
+                                <span class="chart-tooltip blue">420</span>
+                            </div>
+                            <div class="chart-lines-dot blue" style="--dot-top:16px">
+                                <span class="chart-tooltip blue">390</span>
+                            </div>
+                            <div class="chart-lines-dot blue" style="--dot-top:20px">
+                                <span class="chart-tooltip blue">380</span>
+                            </div>
+                            <div class="chart-lines-dot blue" style="--dot-top:42px">
+                                <span class="chart-tooltip blue">110</span>
+                            </div>
+                            <div class="chart-lines-dot blue" style="--dot-top:24px">
+                                <span class="chart-tooltip blue">360</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="chart-footer">
+                    <div class="chart-date-days">
+                        <p class="chart-day">Mon</p>
+                        <p class="chart-day">Tue</p>
+                        <p class="chart-day">Wed</p>
+                        <p class="chart-day">Thu</p>
+                        <p class="chart-day">Fri</p>
+                        <p class="chart-day">Sat</p>
+                        <p class="chart-day">Sun</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
